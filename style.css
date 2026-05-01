@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #fff7f9;
+
+}
+
+/* 🔸 Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: pink;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+.hero-images{
+background: white;
+padding: 15px;
+border-radius: 20px;
+width: 200px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+transition: 0.3s;
+position: relative;
+}
+
+/* قاب خط‌خطی بیرونی */
+.hero-images:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px dashed #ff9aa2;
+    border-radius: 25px;
+    pointer-events: none;
+}
+
+/* خود عکس */
+.hero-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+.hero-images{
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4d6d;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    width: 200px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+/* قاب خط‌خطی بیرونی */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px dashed #ff9aa2;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+/* 🔸 Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn {
+    background: #ff4d6d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2e55;
+}
+
+.hero-images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 🔸 Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+}
+
+/* 🔸 Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;        /* 👈 حل مشکل سایز عکس */
+    object-fit: cover;    /* 👈 مهم */
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+/* 🔸 Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #ff4d6d;
+    color: white;
+}
